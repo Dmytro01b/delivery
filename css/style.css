@@ -470,6 +470,13 @@ svg path {
   gap: 33px;
 }
 
+.footer-bottom__container {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 [class*=__container] {
   padding: 0px 15px;
 }
@@ -676,6 +683,9 @@ svg path {
   background-color: #1093A1;
   border-radius: 35px;
   opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .section-second__button span {
@@ -1287,6 +1297,23 @@ svg path {
   line-height: 28px;
   letter-spacing: 0.05em;
   color: #000000;
+}
+
+body [class*=watch] {
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+}
+
+body ._watcher-view {
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
 }
 
 @media (max-width: 106.25rem) {
